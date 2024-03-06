@@ -11,22 +11,9 @@ import {
   View,
 } from 'react-native';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
 import GoBackBtn from './src/components/Button/GoBackBtn';
 
 function App() {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
   return (
     // <SafeAreaView style={backgroundStyle}>
     //   <StatusBar
@@ -41,7 +28,6 @@ function App() {
     //   </ScrollView>
     // </SafeAreaView>
     <>
-      <GoBackBtn title={'Continue'} />
       <AppNavigation />
     </>
   );
